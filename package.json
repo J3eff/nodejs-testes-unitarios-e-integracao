@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --watch",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --coverage"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,5 @@
     "eslint": "^8.57.1",
     "globals": "^13.24.0",
     "jest": "28.1.0"
-  }  
+  }
 }
